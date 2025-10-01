@@ -1,11 +1,10 @@
-# Rick and Morty Character Browser
+# Character Browser
 
-A Vue.js application that displays characters from the Rick and Morty API with infinite scroll and character detail views.
+A Vue.js application that displays characters with infinite scroll and detail views.
 
 ## Features
 
-- Browse characters from Rick and Morty
-- Infinite scroll loading
+- Browse characters with infinite scroll
 - Character detail view
 - Responsive design
 - State preservation when navigating between views
@@ -16,7 +15,6 @@ A Vue.js application that displays characters from the Rick and Morty API with i
 - Vue Router
 - Vite
 - SCSS
-- Rick and Morty API
 
 ## Prerequisites
 
@@ -68,10 +66,6 @@ src/
 ├── main.js                 # Application entry point
 └── style.scss              # Global styles
 ```
-
-## API
-
-This project uses the [Rick and Morty API](https://rickandmortyapi.com/).
 
 ## License
 

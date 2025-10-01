@@ -1,14 +1,14 @@
 {
-  "name": "andele-test",
+  "name": "am-test",
   "version": "1.0.0",
-  "description": "Rick and Morty character browser with Vue.js",
+  "description": "Character browser application",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "keywords": ["vue", "vite", "rick-and-morty"],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
