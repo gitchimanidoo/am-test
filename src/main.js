@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
 import CharacterList from './components/CharacterList.vue'
 import CharacterDetail from './components/CharacterDetail.vue'
-import './style.css'
+import './style.scss'
 
 // Create router
 const routes = [

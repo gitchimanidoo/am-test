@@ -13,7 +13,10 @@
           class="character-list__item"
           @click="goToCharacter(character.id)"
         >
-          <img :src="character.image" :alt="character.name" class="character-list__media">
+          
+          <picture class="character-list__media">
+            <img :src="character.image" :alt="character.name" class="">
+          </picture>
           <div class="character-info">
             <h2>{{ character.name }}</h2>
             <ul class="character-properties character-properties--list">
@@ -132,12 +135,30 @@ export default {
       gap:0.5rem;
       flex-direction:column;
       cursor:pointer;
+      -webkit-user-select:none;
       user-select:none;
+      &:hover {
+        .character-list__media {
+          border-radius:0.5rem;
+          img {
+            transform:scale(1);
+          } 
+        }
+      }
     }
     &__media {
+      display:block;
+      border-radius:0.5rem 0.5rem 0 0;
+      aspect-ratio:1 / 1;
+      overflow:hidden;
+      transition:border-radius var(--transition-duration) var(--transition-style-ease-in-out);
+      img {
         display:block;
-        border-radius:0.5rem 0.5rem 0 0;
-        overflow:hidden;
+        transform-origin:center center;
+        transform:scale(1.1);
+        transition:transform var(--transition-duration) var(--transition-style-ease-in-out);
+        will-change:transform;
+      }
     }
   }
 </style>

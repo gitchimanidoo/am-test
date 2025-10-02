@@ -1,6 +1,8 @@
 :root {
   --color-body-primary:#282828;
   --color-body-secondary:#757575;
+  --transition-duration:0.25s;
+  --transition-style-ease-in-out:ease-in-out;
 }
 * {
   margin:0;padding:0;
@@ -68,11 +70,13 @@ h2 {
   color:var(--color-body-primary);
   font-size:20px;
   font-weight:600;
-  text-decoration:underline;
+  text-decoration:none;
+  border-bottom:2px solid var(--color-body-primary);
   cursor:pointer;
+  -webkit-user-select:none;
   user-select:none;
-  transition:text-decoration 0.9s ease-in;
+  transition:border var(--transition-duration) var(--transition-style-ease-in-out);
   &:hover {
-    text-decoration:none;
+    border-bottom-color:transparent;
   }
 }

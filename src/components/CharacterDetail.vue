@@ -25,7 +25,8 @@
       <p>Character not found</p>
     </div>
 
-    <button @click="goBack" class="btn">Back to List</button>
+    
+    <a href="/" class="btn" @click.prevent="goBack">Back to List</a>
   </div>
 </template>
 
@@ -87,6 +88,7 @@ export default {
 
 <style scoped lang="scss">
   .character-detail {
+    -webkit-user-select:none;
     user-select:none;
     &__content {
       display:grid;
